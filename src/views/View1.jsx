@@ -1,7 +1,7 @@
-import { FieldText, FieldSelect, FieldEmail, FieldDate } from "../components";
+import { FieldText, FieldSelect, FieldEmail, FieldRadio } from "../components";
 import { useValidation } from "../hooks";
 
-export default function View1({ handleNext }) {
+export default function View1({ handleNext, sending }) {
     const [validate, Validator] = useValidation();
 
     return (
@@ -9,17 +9,10 @@ export default function View1({ handleNext }) {
             <div className="container">
                 <section className="heading padding">
                     <div className="left">
-                        <h1 className="text-blue">
-                            Fill out the Personal <br className="mbl-hide" />
-                            Wellness Assessment <br className="mbl-hide" />
-                            for foster children.
-                        </h1>
+                        <h1>As the world changes, so do your banking needs</h1>
                     </div>
                     <div className="right">
-                        <p>
-                            The Personal Wellness Assessment is a short form about the YouthCare member’s health journey. It’s important for us to know about health conditions,
-                            recent hospital visits, medications, and more. This way, we can connect foster children with the right care.
-                        </p>
+                        <p>Products to fit your banking needs including checking, savings, mortgage and&nbsp;retirement.</p>
                     </div>
                 </section>
             </div>
@@ -27,92 +20,38 @@ export default function View1({ handleNext }) {
                 <section className="form padding">
                     <div className="form__header">
                         <hr />
-                        <h2 className="text-blue">Section 1: Assessment&nbsp;basics</h2>
-                        <p className="small">Complete all fields.</p>
                     </div>
                     <div className="form__fields">
                         <div className="form__fields--row">
-                            <FieldDate id="q1" label="Date of assessment" validator={Validator} />
+                            <FieldText id="q1" label="First name" validator={Validator} />
+                            <FieldText id="q2" label="Last name" validator={Validator} />
                         </div>
                         <div className="form__fields--row">
-                            <FieldText id="q2" label="Member’s chosen name, gender, and/or&nbsp;pronouns" validator={Validator} />
+                            <FieldEmail id="q3" label="Email address" validator={Validator} />
+                            <FieldText id="q4" label="Phone number" validator={Validator} regEx={/^(\+|)[0-9\-\(\)]*$/g} />
                         </div>
                         <div className="form__fields--row">
-                            <FieldText id="q3" label="Name of person completing assessment" validator={Validator} />
-                        </div>
-                        <div className="form__fields--row">
-                            <FieldText id="q4" label="Phone number of person completing assessment" validator={Validator} numbers={true} />
-                            <FieldEmail id="q5" label="Email of person completing assessment" validator={Validator} />
-                        </div>
-                        <div className="form__fields--row">
+                            <FieldText id="q5" label="Zip code" validator={Validator} regEx={/(^\d{5}$)|(^\d{5}-\d{4}$)/} />
                             <FieldSelect
                                 id="q6"
-                                label="Relationship of the person completing this assessment to the YouthCare member"
-                                options={[
-                                    "Biological parent",
-                                    "Foster parent",
-                                    "Adoptive parent/legal guardian",
-                                    "Caseworker",
-                                    "Caseworker supervisor",
-                                    "Facility/residential contact",
-                                    "Self/member",
-                                    "Other",
-                                ]}
-                                subCond="Other"
-                                subLabel="If “Other” please describe"
+                                label="Area of interest"
+                                options={["Private Wealth", "Commerical banking", "Private banking", "Agility or Personabl banking"]}
                                 validator={Validator}
                             />
                         </div>
                         <div className="form__fields--row">
-                            <FieldSelect
-                                id="q7"
-                                label="Youth placement at time of assessment"
-                                options={[
-                                    "Foster home",
-                                    "Hospital",
-                                    "Group home or care setting",
-                                    "Shelter",
-                                    "Detention/incarceration",
-                                    "Adoptive/guardian home",
-                                    "Biological parent",
-                                    "Fictive kin (not related by birth or marriage)",
-                                    "Transitional living placement",
-                                    "Independent living placement",
-                                    "Residential Treatment",
-                                    "Other",
-                                ]}
-                                subCond="Other"
-                                subLabel="If “Other” please describe"
-                                validator={Validator}
-                            />
-                        </div>
-                        <div className="form__fields--row">
-                            <FieldSelect
-                                id="q8"
-                                label="DCFS permanency goal"
-                                options={[
-                                    "Return home",
-                                    "Substitute/foster care pending Termination of Parental Rights (TPR)",
-                                    "Guardianship",
-                                    "Adoption",
-                                    "Independence",
-                                    "Cannot be provided for in a home environment",
-                                    "Continuing foster care",
-                                    "Unknown at this time",
-                                    "N/A; permanency hearing has not yet occurred",
-                                    "N/A; FYIC (former youth in care)",
-                                    "Adoption/guardianship subsidy end date",
-                                ]}
-                                subCond="Adoption/guardianship subsidy end date"
-                                subLabel="Please specify end date"
-                                subType="date-future"
-                                validator={Validator}
-                            />
+                            <div className="field">
+                                <div className="field">
+                                    <label className="small bold">I am currently a CIBC client</label>
+                                </div>
+                                <FieldRadio id="q7" options={["Yes", "No"]} validator={Validator} />
+                                <input type="hidden" id="q8" name="q8" value="%%=v(@source)=%%" />
+                            </div>
                         </div>
                     </div>
                     <div className="form__footer">
-                        <button className="button button--next" onClick={() => validate(handleNext)}>
-                            Next
+                        <button className={`button button--next ${sending ? "svg-spinners--ring-resize" : ""}`} onClick={() => validate(handleNext)} disabled={sending}>
+                            {sending ? "Sending " : "Submit"}
                         </button>
                     </div>
                 </section>

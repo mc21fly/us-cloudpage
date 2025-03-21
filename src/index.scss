@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Questrial&display=swap");
+@import url("https://cloud.info.cibc.com/font-css");
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
-    color: #414042;
+    font-family: 'Whitney A', 'Whitney B', Arial, sans-serif;
+    color: #383b3e;
 }
 
 body {
@@ -24,7 +25,7 @@ input {
 }
 
 hr {
-    background-color: #00548c;
+    background-color: #383b3e;
     border: none;
     height: 1px;
 }
@@ -61,7 +62,7 @@ p {
 }
 
 .right {
-    align-self: flex-end;
+    align-self: center;
 }
 
 .padding {
@@ -105,6 +106,10 @@ input:disabled {
     width: 410px;
 }
 
+.dir-row {
+    flex-direction: row;
+}
+
 input[type="checkbox"] {
     -webkit-appearance: none;
     appearance: none;
@@ -115,7 +120,7 @@ input[type="checkbox"] {
     height: 23px;
     min-width: 23px;
     border-radius: 1px;
-    border: 1px solid #414042;
+    border: 1px solid #383b3e;
     padding: 0;
     display: grid;
     place-content: center;
@@ -132,7 +137,8 @@ input[type="radio"] {
     height: 23px;
     min-width: 23px;
     border-radius: 1px;
-    border: 1px solid #414042;
+    border: 1px solid #383b3e;
+    border-radius: 50%;
     padding: 0;
     display: grid;
     place-content: center;
@@ -160,7 +166,7 @@ input[type="checkbox"]::before {
     width: 13px;
     height: 13px;
     transform: scale(0);
-    background-color: #009978;
+    background-color: #383b3e;
 }
 
 input[type="checkbox"]:checked::before {
@@ -198,7 +204,7 @@ label {
 input,
 select {
     height: 46px;
-    border: 1px solid #414042;
+    border: 1px solid #383b3e;
     border-radius: 4px;
     font-size: 18px;
     padding: 0 40px 0 15px;
@@ -230,8 +236,9 @@ input[type="radio"]::before {
     content: "";
     width: 13px;
     height: 13px;
+    border-radius: 50%;
     transform: scale(0);
-    background-color: #009978;
+    background-color: #383b3e;
 }
 
 input[type="radio"]:checked::before {
@@ -268,13 +275,11 @@ input[type="radio"]:checked::before {
 
 h1 {
     font-size: 50px;
-    font-family: "ClearfaceSerial", serif;
     font-weight: 700;
 }
 
 h2 {
     font-size: 37px;
-    font-family: "ClearfaceSerial", serif;
     font-weight: 700;
     margin-top: 30px;
 }
@@ -288,28 +293,34 @@ h2 {
 }
 
 .button {
-    padding: 12px 60px;
+    padding: 13px 60px;
     color: #ffffff;
     font-weight: 700;
     font-size: 18px;
     cursor: pointer;
     border: none;
+    border-radius: 5px;
 }
 
 .button--next {
-    background-color: #009978;
+    background-color: #c41f3e;
+    color: #ffffff;
 }
 
 .button--next:hover {
-    background-color: #00614c;
+    background-color: #8b1d41 !important;
 }
 
 .button--prev {
-    background-color: #2d3236;
+    background-color: #ffffff;
+    border: 1px solid #c41f3e;
+    color: #c41f3e;
 }
 
 .button--prev:hover {
-    background-color: #191c1f;
+    background-color: #8b1d41 !important;
+    color: #ffffff;
+    border: 1px solid #8b1d41;
 }
 
 footer {
@@ -322,12 +333,12 @@ footer {
 footer p {
     font-size: 13px;
     line-height: 19px;
-    color: #414042;
+    color: #383b3e;
 }
 
 textarea {
     height: 125px;
-    border: 1px solid #414042;
+    border: 1px solid #383b3e;
     border-radius: 4px;
     resize: none;
     padding: 15px;
@@ -343,7 +354,7 @@ label:has(+ .sub-label) {
     margin-bottom: 5px;
 }
 
-.no-input {
+.no- {
     margin-bottom: 20px;
 }
 

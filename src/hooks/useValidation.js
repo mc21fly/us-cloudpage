@@ -23,7 +23,7 @@ export default function useValidation() {
         });
 
         if (firstInvalid) {
-            const element = document.querySelector(`#${firstInvalid}`);
+            const element = document.querySelector(`[name*="${firstInvalid}"]`);
             const y = element.getBoundingClientRect().top + window.scrollY;
 
             window.scroll({

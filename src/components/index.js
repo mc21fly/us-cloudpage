@@ -8,5 +8,6 @@ import FieldEmail from "./FieldEmail/FieldEmail";
 import FieldSelect from "./FieldSelect/FieldSelect";
 import FieldText from "./FieldText/FieldText";
 import FieldTextarea from "./FieldTextarea/FieldTextarea";
+import FieldRadio from "./FieldRadio/FieldRadio";
 
-export { Header, Footer, FieldCheckbox, FieldCheckboxText, FieldDate, FieldEmail, FieldSelect, FieldText, FieldTextarea };
+export { Header, Footer, FieldCheckbox, FieldCheckboxText, FieldDate, FieldEmail, FieldSelect, FieldText, FieldTextarea, FieldRadio };

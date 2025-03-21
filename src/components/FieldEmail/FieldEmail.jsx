@@ -41,7 +41,7 @@ export default function FieldEmail({ id, label, validator }) {
     }
 
     function validate() {
-        if (!isValidEmail(input.current.value) || input.current.value === "") {
+        if (input.current.value === "" || !isValidEmail(input.current.value)) {
             input.current.style.border = "1px solid red";
             return false;
         }

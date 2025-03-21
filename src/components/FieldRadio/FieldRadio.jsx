@@ -1,8 +1,7 @@
-import { useLayoutEffect, useEffect, useRef, useState } from "react";
+import { useLayoutEffect, useEffect, useState } from "react";
 import { useStorage } from "../../hooks";
 
 export default function FieldRadio({ id, options, validator }) {
-    const input = useRef();
     const [store, getStored] = useStorage("answers");
     const [checked, setChecked] = useState();
 
@@ -20,16 +19,27 @@ export default function FieldRadio({ id, options, validator }) {
     }, []);
 
     function handleClick({ target }) {
-        if (checked === target.value) {
-            store(id, "");
-            setChecked(null);
-        } else {
-            store(id, target.value);
-            setChecked(target.value);
-        }
+        const radios = document.querySelectorAll(`[name*="${id}"]`);
+        Array.from(radios).forEach((radio) => {
+            radio.style.border = "1px solid #383b3e";
+        });
+
+        store(id, target.value);
+        setChecked(target.value);
     }
 
     function validate() {
+        const radios = document.querySelectorAll(`[name*="${id}"]`);
+        const flags = Array.from(radios).map((radio) => {
+            return radio.checked;
+        });
+
+        if (flags.every((flag) => flag === false)) {
+            Array.from(radios).forEach((radio) => {
+                radio.style.border = "1px solid red";
+            });
+            return false;
+        }
         return true;
     }
 
@@ -37,7 +47,7 @@ export default function FieldRadio({ id, options, validator }) {
         ? options.map((option, index) => {
               return (
                   <div key={index} className="field__radio">
-                      <input ref={input} type="radio" name={id} id={`${id}_${index}`} onClick={handleClick} value={option} checked={option === checked ? true : false} readOnly />
+                      <input type="radio" name={id} id={`${id}_${index}`} onClick={handleClick} value={option} checked={option === checked ? true : false} readOnly />
                       <label htmlFor={`${id}_${index}`}>{option}</label>
                   </div>
               );

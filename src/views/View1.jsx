@@ -9,10 +9,10 @@ export default function View1({ handleNext, sending }) {
             <div className="container">
                 <section className="heading padding">
                     <div className="left">
-                        <h1>As the world changes, so do your banking needs</h1>
+                        <h1>Expertise focused on your&nbsp;goals</h1>
                     </div>
                     <div className="right">
-                        <p>Products to fit your banking needs including checking, savings, mortgage and&nbsp;retirement.</p>
+                        <p>With expertise that spans commercial, wealth management, personal and cross-border banking, we can help you take action on your&nbsp;ambitions.</p>
                     </div>
                 </section>
             </div>

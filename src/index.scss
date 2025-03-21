@@ -12,6 +12,7 @@
 body {
     display: flex;
     flex-direction: column;
+    background-color: #f2f3f2;
 }
 
 header,
@@ -74,7 +75,7 @@ p {
 }
 
 .grey {
-    background-color: #f4f4f4;
+    background-color: #ffffff;
 }
 
 input:disabled {

@@ -9,12 +9,12 @@ export default function View1({ handleNext, sending }) {
             <div className="container">
                 <section className="heading padding">
                     <div className="left">
-                        <h1>Your&nbsp;business. Your&nbsp;vision. Our&nbsp;tools.</h1>
+                        <h1>Wealth management that powers your purpose</h1>
                     </div>
                     <div className="right">
                         <p>
-                            Commercial lending, treasury management, capital markets — your business has complex needs. Whatever they are, CIBC has the resources and expertise to
-                            help you achieve your financial&nbsp;goals.
+                            Affluent individuals and families turn to CIBC Private Wealth for a long-term, trusted partner that can serve all of their investment, trust and private
+                            banking&nbsp;needs.
                         </p>
                     </div>
                 </section>
@@ -38,7 +38,7 @@ export default function View1({ handleNext, sending }) {
                             <FieldSelect
                                 id="q6"
                                 label="Area of interest"
-                                options={["Commercial lending", "Commercial real estate", "Specialty banking", "Treasury management", "Capital markets"]}
+                                options={["Wealth strategies", "Private banking", "Investment management", "Family office", "Trustee services"]}
                                 validator={Validator}
                             />
                         </div>

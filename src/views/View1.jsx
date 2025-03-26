@@ -27,15 +27,15 @@ export default function View1({ handleNext, sending }) {
                             <FieldText id="q2" label="Last name" validator={Validator} />
                         </div>
                         <div className="form__fields--row">
-                            <FieldEmail id="q3" label="Email address" validator={Validator} />
-                            <FieldText id="q4" label="Phone number" validator={Validator} regEx={/^(\+|)[0-9\-\(\)]*$/g} />
+                            <FieldEmail id="q3" label="Email address:" validator={Validator} />
+                            <FieldText id="q4" label="Phone number" validator={Validator} regEx={/^(\+1\s?)?(\(\d{3}\)|\d{3})[-.\s]?\d{3}[-.\s]?\d{4}$/g} />
                         </div>
                         <div className="form__fields--row">
                             <FieldText id="q5" label="Zip code" validator={Validator} regEx={/(^\d{5}$)|(^\d{5}-\d{4}$)/} />
                             <FieldSelect
                                 id="q6"
                                 label="Area of interest"
-                                options={["Private Wealth", "Commerical banking", "Private banking", "Agility or Personabl banking"]}
+                                options={["Personal Checking", "Personal Savings", "Mortgage", "Retirement", "Personal Lending"]}
                                 validator={Validator}
                             />
                         </div>

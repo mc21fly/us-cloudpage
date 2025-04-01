@@ -19,7 +19,7 @@ export default function View1({ handleNext, sending }) {
             <div className="container">
                 <section className="form padding">
                     <div className="form__header">
-                        <hr />
+                        <b className="large">Start the conversation</b>
                     </div>
                     <div className="form__fields">
                         <div className="form__fields--row">
@@ -35,7 +35,7 @@ export default function View1({ handleNext, sending }) {
                             <FieldSelect
                                 id="q6"
                                 label="Area of interest"
-                                options={["Personal Checking", "Personal Savings", "Mortgage", "Retirement", "Personal Lending"]}
+                                options={["Personal Checking", "Personal Savings", "Mortgage", "Retirement", "Personal Lending", "Agility Savings", "Agility CD"]}
                                 validator={Validator}
                             />
                         </div>

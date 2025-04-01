@@ -16,7 +16,7 @@ img {
     background-size: auto 560px;
     background-color: #c41f3e;
 
-    & h1 {
+    & h1, span {
         font-size: 38px;
         color: #ffffff;
         font-weight: 500;
@@ -61,6 +61,20 @@ header {
         color: #ffffff;
         font-weight: 500;
     }
+
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .hero {
+        height: 820px;
+
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .hero {
+        height: 890px;
 
     }
 }

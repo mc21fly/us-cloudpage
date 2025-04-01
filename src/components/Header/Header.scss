@@ -47,7 +47,7 @@ header {
     .hero {
         justify-content: flex-start !important;
         padding-top: 30px;
-        height: 700px;
+        height: 720px;
         width: 100%;
         max-width: 1440px;
         align-items: flex-start !important;
@@ -73,13 +73,14 @@ header {
     }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 550px) {
     .hero {
-        height: 820px;
+        height: 800px;
     }
 }
-@media only screen and (max-width: 320px) {
+
+@media only screen and (max-width: 370px) {
     .hero {
-        height: 850px;
+        height: 860px;
     }
 }

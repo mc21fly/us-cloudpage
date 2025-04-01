@@ -15,8 +15,9 @@ img {
     background-repeat: no-repeat;
     background-size: auto 560px;
     background-color: #383b3e;
+    color: #ffffff;
 
-    & h1 {
+    & h1, span {
         font-size: 38px;
         color: #ffffff;
         font-weight: 500;
@@ -27,6 +28,7 @@ header {
     height:120px;
     display: flex;
     align-items: center;
+    color: #ffffff;
 }
 
 .pad {
@@ -62,5 +64,22 @@ header {
         font-weight: 500;
     }
 
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        height: 720px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .hero {
+        height: 820px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .hero {
+        height: 850px;
     }
 }

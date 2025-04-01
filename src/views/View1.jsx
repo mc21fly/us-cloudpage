@@ -22,7 +22,7 @@ export default function View1({ handleNext, sending }) {
             <div className="container">
                 <section className="form padding">
                     <div className="form__header">
-                        <hr />
+                        <b className="large">Start the conversation</b>
                     </div>
                     <div className="form__fields">
                         <div className="form__fields--row">

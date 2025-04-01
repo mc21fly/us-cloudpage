@@ -53,12 +53,15 @@ p {
 }
 
 .heading {
-    gap: 150px;
+    gap: 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .left,
 .right {
-    padding-top: 70px;
+    padding-top: 50px;
 }
 
 .right {
@@ -66,7 +69,11 @@ p {
 }
 
 .padding {
-    padding: 0 75px 70px;
+    padding: 0 75px 50px;
+}
+
+.large {
+    font-size: 28px;
 }
 
 .blue {
@@ -91,7 +98,8 @@ input:disabled {
 }
 
 .form__header {
-    padding: 70px 0px 40px;
+    padding: 0px 0px 40px;
+    text-align: center;
 }
 
 .form__footer {
@@ -384,6 +392,10 @@ label:has(+ .sub-label) {
         display: none;
     }
 
+    .form__header {
+        padding-top: 30px;
+    }
+
     .form__footer {
         padding-bottom: 50px;
     }
@@ -397,7 +409,7 @@ label:has(+ .sub-label) {
     }
 
     .padding {
-        padding: 0 15px 20px;
+        padding: 0 15px 0px;
     }
 
     footer {

@@ -16,7 +16,7 @@ img {
     background-size: 700px auto;
     background-color: #ffffff;
 
-    & h1 {
+    & h1, span {
         font-size: 38px;
         color: #383b3e;
         font-weight: 500;
@@ -45,7 +45,7 @@ header {
     .hero {
         justify-content: flex-start !important;
         padding-top: 30px;
-        height: 600px;
+        height: 680px;
         width: 100%;
         max-width: 1440px;
         align-items: flex-start !important;
@@ -73,7 +73,7 @@ header {
     .hero {
         justify-content: flex-start !important;
         padding-top: 30px;
-        height: 540px;
+        height: 640px;
         width: 100%;
         max-width: 1440px;
         align-items: flex-start !important;
@@ -101,7 +101,7 @@ header {
     .hero {
         justify-content: flex-start !important;
         padding-top: 30px;
-        height: 500px;
+        height: 560px;
         width: 100%;
         max-width: 1440px;
         align-items: flex-start !important;
@@ -117,6 +117,13 @@ header {
         color: #383b3e;
         font-weight: 500;
     }
+
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .hero {
+        height: 630px;
 
     }
 }

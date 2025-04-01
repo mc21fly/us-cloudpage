@@ -19,7 +19,9 @@ export default function View1({ handleNext, sending }) {
             <div className="container">
                 <section className="form padding">
                     <div className="form__header">
-                        <hr />
+                        <span className="form__header--text">
+                            <b>Start the conversation</b>
+                        </span>
                     </div>
                     <div className="form__fields">
                         <div className="form__fields--row">

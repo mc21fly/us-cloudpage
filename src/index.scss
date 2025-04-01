@@ -53,12 +53,15 @@ p {
 }
 
 .heading {
-    gap: 150px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0px;
 }
 
 .left,
 .right {
-    padding-top: 70px;
+    padding-top: 50px;
 }
 
 .right {
@@ -66,7 +69,7 @@ p {
 }
 
 .padding {
-    padding: 0 75px 70px;
+    padding: 0 75px 0px;
 }
 
 .blue {
@@ -91,8 +94,15 @@ input:disabled {
 }
 
 .form__header {
-    padding: 70px 0px 40px;
+    padding: 50px 0px 40px;
+    text-align: center;
+
+    &--text {
+        font-size: 28px;
+
+    }
 }
+
 
 .form__footer {
     display: flex;
@@ -397,7 +407,11 @@ label:has(+ .sub-label) {
     }
 
     .padding {
-        padding: 0 15px 20px;
+        padding: 0 15px 0px;
+    }
+
+    .form__header {
+        padding-top: 30px;
     }
 
     footer {

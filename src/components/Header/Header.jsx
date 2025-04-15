@@ -12,9 +12,7 @@ export default function Header() {
             </div>
             <div className="container burg">
                 <div className="container hero pad">
-                    <span>COMMERCIAL BANKING</span>
-                    <br />
-                    <br />
+                    <span>Commercial banking</span>
                     <h1>
                         For over 155 years, we've been helping <br className="mbl-hide" />
                         clients reach their unique goals

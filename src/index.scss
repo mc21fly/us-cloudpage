@@ -95,6 +95,7 @@ input:disabled {
 .form {
     display: flex;
     flex-direction: column;
+    width: auto;
 }
 
 .form__header {
@@ -376,9 +377,21 @@ label:has(+ .sub-label) {
     img {
         width: 100% !important;
     }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
     section,
     .form__fields--row {
         flex-direction: column;

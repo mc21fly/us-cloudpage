@@ -11,15 +11,22 @@ img {
     max-width: 1440px;
     align-items: flex-start !important;
     background: url('https://image.s12.sfmc-content.com/lib/fe36117371640479771576/m/1/f27da966-1919-48b0-89dc-56c2d9f4d4c8.jpeg');
-    background-position: bottom right;
+    background-position: bottom right 80px;
     background-repeat: no-repeat;
     background-size: 700px auto;
     background-color: #ffffff;
 
-    & h1, span {
+    & h1 {
         font-size: 38px;
         color: #383b3e;
         font-weight: 500;
+    }
+
+    & span {
+        font-size: 48px;
+        color: #383b3e;
+        font-weight: 600;
+        padding-bottom: 10px;
     }
 }
 

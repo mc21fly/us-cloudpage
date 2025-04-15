@@ -37,7 +37,7 @@ export default function View1({ handleNext, sending }) {
                             <FieldSelect
                                 id="q6"
                                 label="Area of interest"
-                                options={["Private Wealth", "Commerical banking", "Private banking", "Agility or Personal banking"]}
+                                options={["Private Wealth", "Commerical banking", "Private banking", "Agility or Personal banking", "Innovation Banking"]}
                                 validator={Validator}
                             />
                         </div>
@@ -49,6 +49,7 @@ export default function View1({ handleNext, sending }) {
                                 <FieldRadio id="q7" options={["Yes", "No"]} validator={Validator} />
                                 <input type="hidden" id="q8" name="q8" value="%%=v(@source)=%%" />
                             </div>
+                            <div className="field"></div>
                         </div>
                     </div>
                     <div className="form__footer">

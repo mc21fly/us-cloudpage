@@ -54,14 +54,14 @@ header {
     .hero {
         justify-content: flex-start !important;
         padding-top: 30px;
-        height: 720px;
+        height: 680px;
         width: 100%;
         max-width: 1440px;
         align-items: flex-start !important;
-        background: url('https://image.s12.sfmc-content.com/lib/fe36117371640479771576/m/1/d3444bb7-88c4-489d-856f-5888feca18a3.jpeg');
-        background-position: bottom;
+        background: url('https://image.s12.sfmc-content.com/lib/fe36117371640479771576/m/1/19acaa87-76b7-41bd-b474-2cc195861f29.jpg');
+        background-position: bottom center;
         background-repeat: no-repeat;
-        background-size: 350px auto;
+        background-size: 420px auto;
         background-color: #383b3e;
 
         
@@ -89,5 +89,11 @@ header {
 @media only screen and (max-width: 370px) {
     .hero {
         height: 860px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .hero {
+        height: 840px;
     }
 }

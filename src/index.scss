@@ -444,7 +444,7 @@ label:has(+ .sub-label) {
     }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
     .form__footer {
         flex-direction: column-reverse;
     }

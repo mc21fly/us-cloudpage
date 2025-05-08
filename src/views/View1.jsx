@@ -37,7 +37,7 @@ export default function View1({ handleNext, sending }) {
                             <FieldSelect
                                 id="q6"
                                 label="Area of interest"
-                                options={["Private Wealth", "Commerical banking", "Private banking", "Agility or Personal banking", "Innovation Banking"]}
+                                options={["Private Wealth", "Commerical banking", "Private banking", "Agility or Personal banking", "Innovation Banking", "Investment Banking"]}
                                 validator={Validator}
                             />
                         </div>

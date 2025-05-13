@@ -3,6 +3,19 @@ import "./Header.scss";
 export default function Header() {
     return (
         <>
+            <div className="container burgundy">
+                <div className="container pad ribbon">
+                    <a href="https://us.cibc.com/en/about-us/locations.html" target="_blank">
+                        CIBC US Locations
+                    </a>
+                    <a href="https://us.cibc.com/en/contact-us.html" target="_blank">
+                        Contact Us
+                    </a>
+                    <a href="https://us.cibc.com/en/about-us.html" target="_blank">
+                        About Us
+                    </a>
+                </div>
+            </div>
             <div className="container">
                 <header className="pad">
                     <a href="https://us.cibc.com/en/personal.html" target="_blank">
@@ -13,7 +26,8 @@ export default function Header() {
             <div className="container burg">
                 <div className="container hero pad">
                     <h1>
-                        For over 155 years, we've been helping <br className="mbl-hide"/>clients reach their unique goals
+                        For over 155 years, we've been helping <br className="mbl-hide" />
+                        clients reach their unique goals
                     </h1>
                 </div>
             </div>

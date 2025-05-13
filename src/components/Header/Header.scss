@@ -1,3 +1,29 @@
+.burgundy {
+    background-color: #8b1d41 !important;
+}
+
+.ribbon {
+    background-color: #8b1d41;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    width: 100%;
+    max-width: 1440px;
+
+    & a {
+       padding: 12px 0;
+       margin-right: 30px;
+       color: #ffffff;
+       text-decoration: none;
+       font-size: 14px;
+       font-weight: 500;
+
+       &:hover {
+        text-decoration: underline;
+       }
+    }
+}
+
 img {
     width: 142px;
     max-width: 142px;
@@ -77,6 +103,20 @@ header {
         height: 820px;
 
     }
+}
+
+@media only screen and (max-width: 370px) {
+    .hero {
+        height: 890px;
+
+    }
+
+    .ribbon {
+
+    & a {
+       margin-right: 16px;
+    }
+}
 }
 
 @media only screen and (max-width: 320px) {

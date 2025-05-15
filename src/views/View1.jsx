@@ -1,4 +1,4 @@
-import { FieldText, FieldSelect, FieldEmail, FieldRadio } from "../components";
+import { FieldText, FieldCheckbox, FieldEmail, FieldRadio } from "../components";
 import { useValidation } from "../hooks";
 
 export default function View1({ handleNext, sending }) {
@@ -35,12 +35,14 @@ export default function View1({ handleNext, sending }) {
                         </div>
                         <div className="form__fields--row">
                             <FieldText id="q5" label="Zip code" validator={Validator} regEx={/(^\d{5}$)|(^\d{5}-\d{4}$)/} />
-                            <FieldSelect
-                                id="q6"
-                                label="Area of interest"
-                                options={["Wealth strategies", "Private banking", "Investment management", "Family office", "Trustee services"]}
-                                validator={Validator}
-                            />
+                        </div>
+                        <div className="form__fields--row">
+                            <div className="field">
+                                <div className="field">
+                                    <label className="small bold">Area of interest</label>
+                                </div>
+                                <FieldCheckbox id="q6pw" options={["Wealth strategies", "Private banking", "Investment management", "Family office", "Trustee services"]} />
+                            </div>
                         </div>
                         <div className="form__fields--row">
                             <div className="field">

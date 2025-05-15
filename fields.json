@@ -4,7 +4,7 @@
     "q3": "EmailAddress",
     "q4": "Phone",
     "q5": "Zip",
-    "q6": "Interest",
+    "q6pw": "Interest",
     "q7": "isClient",
     "q8": "Source"
 }

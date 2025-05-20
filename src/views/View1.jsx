@@ -13,7 +13,7 @@ export default function View1({ handleNext, sending }) {
                     </div>
                     <div className="right">
                         <p>
-                            Affluent individuals and families turn to CIBC Private Wealth for a long-term, trusted partner that can serve all of their investment, trust and private
+                            Affluent individuals and families turn to CIBC Private Wealth for a long-term, trusted partner that can serve all of their wealth management and private
                             banking&nbsp;needs.
                         </p>
                     </div>
@@ -39,9 +39,9 @@ export default function View1({ handleNext, sending }) {
                         <div className="form__fields--row">
                             <div className="field">
                                 <div className="field">
-                                    <label className="small bold">Area of interest</label>
+                                    <label className="small bold">Areas of interest (select all that apply)</label>
                                 </div>
-                                <FieldCheckbox id="q6pw" options={["Wealth strategies", "Private banking", "Investment management", "Family office", "Trustee services"]} />
+                                <FieldCheckbox id="q6pw" options={["Investment management", "Private banking", "Wealth strategies", "Family office", "Trustee services"]} />
                             </div>
                         </div>
                         <div className="form__fields--row">

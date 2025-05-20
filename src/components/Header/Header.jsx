@@ -27,8 +27,8 @@ export default function Header() {
                 <div className="container hero pad">
                     <span>Private wealth</span>
                     <h1>
-                        For over 155 years, we've been helping <br className="mbl-hide" />
-                        clients reach their unique goals
+                        For over 155 years, we've been helping <br className="mbl-hide hide-xl" />
+                        clients reach their unique&nbsp;goals
                     </h1>
                 </div>
             </div>

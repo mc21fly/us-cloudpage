@@ -72,6 +72,27 @@ header {
     background-color: #383b3e !important;
 }
 
+@media only screen and (max-width: 1340px) {
+    .hero {
+        justify-content: flex-start !important;
+        padding-top: 30px;
+        height: 680px;
+        width: 100%;
+        max-width: 1440px;
+        align-items: flex-start !important;
+        background: url('https://image.s12.sfmc-content.com/lib/fe36117371640479771576/m/1/19acaa87-76b7-41bd-b474-2cc195861f29.jpg');
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: 420px auto;
+        background-color: #383b3e;
+    }
+
+    .hide-xl {
+        display: none !important;
+    }
+
+}
+
 @media only screen and (max-width: 1024px) {
     .pad {
         padding: 0 20px;

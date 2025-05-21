@@ -41,7 +41,7 @@ export default function View1({ handleNext, sending }) {
                                 <div className="field">
                                     <label className="small bold">Areas of interest (select all that apply)</label>
                                 </div>
-                                <FieldCheckbox id="q6pw" options={["Investment management", "Private banking", "Wealth strategies", "Family office", "Trustee services"]} />
+                                <FieldCheckbox id="q6pw" options={["Investment Management", "Private Banking", "Wealth Strategies", "Family Office", "Trustee Services"]} />
                             </div>
                         </div>
                         <div className="form__fields--row">

@@ -14,12 +14,13 @@ export default function App() {
     async function send() {
         const source = document.querySelector("#q8");
         store("q8", source.value);
+        store("q9", "Retail");
 
         setSending(true);
         const answers = getStored();
         const translated = translate(answers);
 
-        const response = await fetch("https://mcjz3r7pm1pl-6z7sb0jcxy1k0y4.pub.sfmc-content.com/r554jumgch2", {
+        const response = await fetch("https://cloud.mail.us.cibc.com/r554jumgch2", {
             method: "POST",
             body: JSON.stringify(translated),
         });

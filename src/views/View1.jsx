@@ -12,7 +12,10 @@ export default function View1({ handleNext, sending }) {
                         <h1>Expertise focused on your&nbsp;goals</h1>
                     </div>
                     <div className="right">
-                        <p>With expertise that spans commercial, wealth management, personal and cross-border banking, we can help you take action on your&nbsp;ambitions.</p>
+                        <p>
+                            With expertise that spans commercial, wealth management,innovation banking, personal and cross-border banking, we can help you take action on
+                            your&nbsp;ambitions.
+                        </p>
                     </div>
                 </section>
             </div>
@@ -37,7 +40,7 @@ export default function View1({ handleNext, sending }) {
                             <FieldSelect
                                 id="q6"
                                 label="Area of interest"
-                                options={["Innovation Banking", "Private Wealth", "Commerical banking", "Private banking", "Agility or Personal banking", "Investment Banking"]}
+                                options={["Innovation Banking", "Commerical Banking", "Investment Banking", "Private Wealth", "Agility or Personal Banking", "Private Banking"]}
                                 validator={Validator}
                             />
                         </div>

@@ -31,6 +31,16 @@ img {
     display: block;
 }
 
+ul {
+    margin-top: 20px;
+}
+
+ul > li {
+    color: white;
+    margin-left: 50px;
+    font-size: 38px;
+}
+
 .hero {
     height: 480px;
     width: 100%;
@@ -74,7 +84,7 @@ header {
     .hero {
         justify-content: flex-start !important;
         padding-top: 30px;
-        height: 700px;
+        height: 900px;
         width: 100%;
         max-width: 1440px;
         align-items: flex-start !important;
@@ -99,7 +109,7 @@ header {
     .hero {
         justify-content: flex-start !important;
         padding-top: 30px;
-        height: 700px;
+        height: 900px;
         width: 100%;
         max-width: 1440px;
         align-items: flex-start !important;
@@ -121,14 +131,28 @@ header {
 
 @media only screen and (max-width: 720px) {
     .hero {
-        height: 820px;
+        height: 880px;
+
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .hero {
+        height: 950px;
+
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .hero {
+        height: 990px;
 
     }
 }
 
 @media only screen and (max-width: 370px) {
     .hero {
-        height: 890px;
+        height: 1140px;
 
     }
 

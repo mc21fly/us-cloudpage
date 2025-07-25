@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Header, Footer } from "./components";
 import { View1, View4 } from "./views";
 import { useStorage } from "./hooks";
-import translate from "./helpers/translate";
 import Notify from "simple-notify";
 import "simple-notify/dist/simple-notify.css";
 
@@ -12,17 +11,16 @@ export default function App() {
     const [store, getStored] = useStorage("answers");
 
     async function send() {
-        const source = document.querySelector("#q8");
-        store("q8", source.value);
-        store("q9", "Retail");
+        const source = document.querySelector("#Source");
+        store("Source", source.value);
 
         setSending(true);
         const answers = getStored();
-        const translated = translate(answers);
+        console.log(answers);
 
-        const response = await fetch("https://cloud.mail.us.cibc.com/r554jumgch2", {
+        const response = await fetch("https://mcjz3r7pm1pl-6z7sb0jcxy1k0y4.pub.sfmc-content.com/lhgv5cclgv0", {
             method: "POST",
-            body: JSON.stringify(translated),
+            body: JSON.stringify(answers),
         });
         const json = await response.json();
 

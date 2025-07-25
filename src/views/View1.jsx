@@ -9,43 +9,102 @@ export default function View1({ handleNext, sending }) {
             <div className="container">
                 <section className="heading padding">
                     <div className="left">
-                        <h1>As the world changes, so do your banking needs</h1>
+                        <h1>Reach even the most ambitious possibilities</h1>
                     </div>
                     <div className="right">
-                        <p>Products to fit your banking needs including checking, savings, mortgage and&nbsp;retirement.</p>
+                        <p>With our expert advice and tailored solutions, we can help build your business</p>
                     </div>
                 </section>
             </div>
             <div className="container">
                 <section className="form padding">
                     <div className="form__header">
-                        <span className="large">Start the conversation</span>
+                        <div className="left">
+                            <span className="large">Start the conversation</span>
+                        </div>
+                        <div className="right" style={{ paddingTop: 10 }}>
+                            <p className="large">A Community Development Relationship Manager will contact you within two business days</p>
+                        </div>
                     </div>
                     <div className="form__fields">
                         <div className="form__fields--row">
-                            <FieldText id="q1" label="First name" validator={Validator} />
-                            <FieldText id="q2" label="Last name" validator={Validator} />
+                            <FieldText id="FirstName" label="First name" validator={Validator} />
+                            <FieldText id="LastName" label="Last name" validator={Validator} />
                         </div>
                         <div className="form__fields--row">
-                            <FieldEmail id="q3" label="Email address:" validator={Validator} />
-                            <FieldText id="q4" label="Phone number" validator={Validator} regEx={/^(\+1\s?)?(\(\d{3}\)|\d{3})[-.\s]?\d{3}[-.\s]?\d{4}$/g} />
+                            <FieldEmail id="EmailAddress" label="Email address:" validator={Validator} />
+                            <FieldText id="Phone" label="Phone number" validator={Validator} regEx={/^(\+1\s?)?(\(\d{3}\)|\d{3})[-.\s]?\d{3}[-.\s]?\d{4}$/g} />
                         </div>
                         <div className="form__fields--row">
-                            <FieldText id="q5" label="Zip code" validator={Validator} regEx={/(^\d{5}$)|(^\d{5}-\d{4}$)/} />
+                            <FieldText id="Address" label="Address" validator={Validator} regEx={/^.*$/g} />
                             <FieldSelect
-                                id="q6"
-                                label="Area of interest"
-                                options={["Personal Checking", "Personal Savings", "Mortgage", "Personal Retirement", "Personal Lending", "Agility Savings", "Agility CD"]}
+                                id="State"
+                                label="State"
+                                options={[
+                                    "AL",
+                                    "AK",
+                                    "AZ",
+                                    "AR",
+                                    "CA",
+                                    "CO",
+                                    "CT",
+                                    "DE",
+                                    "FL",
+                                    "GA",
+                                    "HI",
+                                    "ID",
+                                    "IL",
+                                    "IN",
+                                    "IA",
+                                    "KS",
+                                    "KY",
+                                    "LA",
+                                    "ME",
+                                    "MD",
+                                    "MA",
+                                    "MI",
+                                    "MN",
+                                    "MS",
+                                    "MO",
+                                    "MT",
+                                    "NE",
+                                    "NV",
+                                    "NH",
+                                    "NJ",
+                                    "NM",
+                                    "NY",
+                                    "NC",
+                                    "ND",
+                                    "OH",
+                                    "OK",
+                                    "OR",
+                                    "PA",
+                                    "RI",
+                                    "SC",
+                                    "SD",
+                                    "TN",
+                                    "TX",
+                                    "UT",
+                                    "VT",
+                                    "VA",
+                                    "WA",
+                                    "WV",
+                                    "WI",
+                                    "WY",
+                                ]}
                                 validator={Validator}
                             />
+                        </div>
+                        <div className="form__fields--row">
+                            <FieldText id="Zip" label="Zip code" validator={Validator} regEx={/(^\d{5}$)|(^\d{5}-\d{4}$)/} />
                         </div>
                         <div className="form__fields--row">
                             <div className="field">
                                 <div className="field">
                                     <label className="small bold">I am currently a CIBC client</label>
                                 </div>
-                                <FieldRadio id="q7" options={["Yes", "No"]} validator={Validator} />
-                                <input type="hidden" id="q8" name="q8" value="%%=v(@source)=%%" />
+                                <FieldRadio id="isClient" options={["Yes", "No"]} validator={Validator} />
+                                <input type="hidden" id="Source" name="Source" value="%%=v(@source)=%%" />
                             </div>
                         </div>
                     </div>

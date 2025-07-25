@@ -3,18 +3,18 @@ export default function Footer() {
         <div className="container grey">
             <footer>
                 <p>
-                    Consumer and commercial banking products and services are offered through CIBC Bank USA. Member FDIC and Equal Housing Lender. All loans are subject to credit
-                    approval. Trust services and investment products are offered by CIBC Private Wealth Management. CIBC Private Wealth Management includes CIBC National Trust
-                    Company, CIBC Delaware Trust Company and CIBC Private Wealth Advisors, Inc. (a registered investment adviser) all of which are wholly owned subsidiaries of CIBC
-                    Private Wealth Group, LLC — and the private banking division of CIBC Bank USA. Trust services and investment products are not FDIC insured, not deposits or
-                    obligations of, or guaranteed by, CIBC Bank USA or CIBC National Trust Company, and are subject to investment risk, including loss of principal.
+                    * All loans subject to credit approval. Minimum credit score required. Offer is subject to change, and may be withdrawn, at any time without notice. This offer
+                    is valid for businesses with annual revenues less than $1,000,000 that are approved for a new Term Loan or Revolving Line of Credit by October 31, 2025. Lines
+                    of credit available up to $100,000 with a maximum loan term of one year when you also have an existing or open a new deposit account. Rates for revolving lines
+                    of credit are variable based on the WSJ prime rate and subject to change. Rate floor for this offer is 5%. Term loans available up to $100,000 with a maximum
+                    loan term of one year. EasyPath lines of credit available up to $30,000 with a maximum loan term of one year when you also have an existing or open a new
+                    deposit account. EasyPath term loans available up to $30,000 with a maximum loan term of one year. Entrepreneur lines of credit available up to $10,000 with a
+                    maximum loan term of one year when you also have an existing or open a new deposit account. Entrepreneur term loans available up to $10,000 with a maximum loan
+                    term of one year. Personal guarantee required for all business loans and lines of credit. Offer requires a new or existing deposit relationship with CIBC Bank
+                    USA. Geographic restrictions apply and are subject to change at any time without notice. Clients with existing CIBC small business loans are not eligible for
+                    this&nbsp;offer.
                 </p>
-                <p>Commercial real estate products and services offered by CIBC Bank USA and CIBC Inc.</p>
-                <p>
-                    CIBC Capital Markets is a trademark brand name under which CIBC and some of its subsidiaries, including CIBC World Markets Inc., CIBC World Markets Corp. and
-                    CIBC Bank USA, provide different products and services. Capital Markets products are not FDIC insured; not deposits or obligations of, or guaranteed by, CIBC
-                    Bank USA; and are subject to investment risk, including loss of principal.
-                </p>
+                <p>Products and services are offered by CIBC Bank USA.</p>
                 <p>This website is not intended for use by residents of the European Union (EU).</p>
                 <p>
                     California residents, learn about the{" "}

@@ -25,11 +25,16 @@ export default function Header() {
             </div>
             <div className="container burg">
                 <div className="container hero pad">
-                    <span>Personal and digital banking</span>
+                    <span>Limited-time offer</span>
                     <h1>
-                        For over 155 years, we've been helping <br className="mbl-hide hide-xl" />
-                        clients reach their unique&nbsp;goals
+                        Get a term loan or revolving line of credit, <br className="mbl-hide hide-xl" />
+                        currently at Prime minus 2%*
                     </h1>
+                    <ul>
+                        <li>Loan up to $100,000</li>
+                        <li>Loan term up to 1 year</li>
+                        <li>No loan origination fees</li>
+                    </ul>
                 </div>
             </div>
         </>

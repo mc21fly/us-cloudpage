@@ -13,7 +13,7 @@ export default function View1({ handleNext, sending }) {
                     </div>
                     <div className="right">
                         <p>
-                            With expertise that spans commercial, wealth management,innovation banking, personal and cross-border banking, we can help you take action on
+                            With expertise that spans commercial, wealth management, innovation banking, personal and cross-border banking, we can help you take action on
                             your&nbsp;ambitions.
                         </p>
                     </div>

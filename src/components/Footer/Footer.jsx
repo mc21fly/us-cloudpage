@@ -3,7 +3,7 @@ export default function Footer() {
         <div className="container grey">
             <footer>
                 <p>
-                    * All loans subject to credit approval. Minimum credit score required. Offer is subject to change, and may be withdrawn, at any time without notice. This offer
+                    *All loans subject to credit approval. Minimum credit score required. Offer is subject to change, and may be withdrawn, at any time without notice. This offer
                     is valid for businesses with annual revenues less than $1,000,000 that are approved for a new Term Loan or Revolving Line of Credit by October 31, 2025. Lines
                     of credit available up to $100,000 with a maximum loan term of one year when you also have an existing or open a new deposit account. Rates for revolving lines
                     of credit are variable based on the WSJ prime rate and subject to change. Rate floor for this offer is 5%. Term loans available up to $100,000 with a maximum

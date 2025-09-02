@@ -22,7 +22,9 @@ export default function Footer() {
                         California Privacy Policy
                     </a>
                 </p>
-                <p>The CIBC Logo is a registered trademark of CIBC, used under license. ©{new Date().getFullYear()} CIBC Bank USA.</p>
+                <p>
+                    <sup style={{ lineHeight: 0 }}>&reg;</sup>The CIBC Logo is a registered trademark of CIBC, used under license. CIBC Bank USA.
+                </p>
                 <p>&copy; {new Date().getFullYear()}. All rights reserved.</p>
                 <p>
                     <img

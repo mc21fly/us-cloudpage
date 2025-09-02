@@ -28,10 +28,6 @@ export default function FieldEmail({ id, label, validator }) {
 
     function handleBlur({ target }) {
         target.style.border = "1px solid #414042";
-
-        if (target.value !== "" && !isValidEmail(target.value)) {
-            target.style.border = "1px solid red";
-        }
     }
 
     function isValidEmail(email) {

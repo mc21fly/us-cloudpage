@@ -7,12 +7,15 @@ export default function View1({ handleNext, sending }) {
     return (
         <>
             <div className="container">
-                <section className="heading padding">
+                <section className="heading padding" style={{ paddingBottom: 10 }}>
                     <div className="left">
                         <h1>Reach even the most ambitious possibilities</h1>
                     </div>
                     <div className="right">
-                        <p>With our expert advice and tailored solutions, we can help build your business</p>
+                        <p className="small">
+                            Get a one-year term loan or revolving line of credit up to $100,000 with no origination fee to <br className="mbl-hide" />
+                            fuel your business ambitions.
+                        </p>
                     </div>
                 </section>
             </div>
@@ -20,10 +23,10 @@ export default function View1({ handleNext, sending }) {
                 <section className="form padding">
                     <div className="form__header">
                         <div className="left">
-                            <span className="large">Start the conversation</span>
+                            <span className="small">Interested in learning more? Request a follow-up – we’re here to help.</span>
                         </div>
                         <div className="right" style={{ paddingTop: 10 }}>
-                            <p className="large">A Community Development Relationship Manager will contact you within two business days</p>
+                            <p className="small">Get started by answering a few questions so we can reach out to you within two business days.</p>
                         </div>
                     </div>
                     <div className="form__fields">

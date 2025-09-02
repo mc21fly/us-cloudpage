@@ -65,6 +65,7 @@ p {
 
 .right {
     align-self: center;
+    padding-top: 30px;
 }
 
 .padding {
@@ -283,7 +284,7 @@ input[type="radio"]:checked::before {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 34px;
     font-weight: 400;
 }
 
@@ -428,7 +429,7 @@ label:has(+ .sub-label) {
     }
 
     h1 {
-        font-size: 44px;
+        font-size: 34px;
     }
 
     h2 {

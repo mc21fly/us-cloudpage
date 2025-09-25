@@ -4,7 +4,7 @@ export default function Footer() {
             <footer>
                 <p>
                     *All loans subject to credit approval. Minimum credit score required. Offer is subject to change, and may be withdrawn, at any time without notice. This offer
-                    is valid for businesses with annual revenues less than $1,000,000 that are approved for a new Term Loan or Revolving Line of Credit by October 31, 2025. Lines
+                    is valid for businesses with annual revenues less than $1,000,000 that are approved for a new Term Loan or Revolving Line of Credit by November 30, 2025. Lines
                     of credit available up to $100,000 with a maximum loan term of one year when you also have an existing or open a new deposit account. Rates for revolving lines
                     of credit are variable based on the WSJ prime rate and subject to change. Rate floor for this offer is 5%. Term loans available up to $100,000 with a maximum
                     loan term of one year. EasyPath lines of credit available up to $30,000 with a maximum loan term of one year when you also have an existing or open a new
@@ -28,9 +28,9 @@ export default function Footer() {
                 <p>&copy; {new Date().getFullYear()}. All rights reserved.</p>
                 <p>
                     <img
-                        src="https://image.s12.sfmc-content.com/lib/fe36117371640479771576/m/1/55b86060-6930-4dc6-addf-a0ebe9a8097e.png"
+                        src="https://image.s12.sfmc-content.com/lib/fe36117371640479771576/m/1/fa8731e8-55fc-4b53-a722-5629b8b2c315.png"
                         alt="Equal housing lender | Member FDIC"
-                        style={{ height: "38px", maxWidth: "451px", width: "451px" }}
+                        style={{ height: "auto", maxWidth: "327px", width: "327px" }}
                     />
                 </p>
             </footer>

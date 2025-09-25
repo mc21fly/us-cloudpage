@@ -5,6 +5,9 @@ import { useStorage } from "./hooks";
 import Notify from "simple-notify";
 import "simple-notify/dist/simple-notify.css";
 
+// https://cloud.mail.us.cibc.com/lhgv5cclgv0 - PROD
+// https://mcjz3r7pm1pl-6z7sb0jcxy1k0y4.pub.sfmc-content.com/lhgv5cclgv0 - DEV
+
 export default function App() {
     const [view, setView] = useState("view1");
     const [sending, setSending] = useState(false);
@@ -18,7 +21,7 @@ export default function App() {
         const answers = getStored();
         console.log(answers);
 
-        const response = await fetch("https://mcjz3r7pm1pl-6z7sb0jcxy1k0y4.pub.sfmc-content.com/lhgv5cclgv0", {
+        const response = await fetch("https://cloud.mail.us.cibc.com/lhgv5cclgv0", {
             method: "POST",
             body: JSON.stringify(answers),
         });
@@ -27,6 +30,13 @@ export default function App() {
         if (json && json.status === 200) {
             localStorage.clear();
             setView("view4");
+
+            if (window.lintrk) {
+                window.lintrk("track", { conversion_id: 21615740 });
+                console.log("LinkedIn conversion tracked");
+            } else {
+                console.warn("LinkedIn tracking not loaded");
+            }
         }
 
         if (json && json.status === 400) {

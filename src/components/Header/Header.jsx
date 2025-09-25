@@ -23,10 +23,21 @@ export default function Header() {
                     </a>
                 </header>
             </div>
-            <div className="container burg">
-                <div className="container hero pad">
-                    <h1>Limited-time offer</h1>
-                    <span>Boost your small business with a loan at Prime minus 2%*</span>
+            <div className="container hero display-none">
+                <div className="pad hero-copy-d">
+                    <div className="hero-copy-d__text">
+                        <span className="line-one">LIMITED-TIME OFFER</span>
+                        <h1 className="line-two">Boost your business with a loan at Prime minus 2%*</h1>
+                        <span className="line-three">Get a one-year term loan or revolving line of credit up to $100,000 with no origination fee</span>
+                    </div>
+                </div>
+            </div>
+            <img src="https://image.mail.us.cibc.com/lib/fe3d11717164057d751675/m/1/Splash_mobile_campaign.jpg" className="img mbl-img-show" />
+            <div className="pad hero-copy-m">
+                <div className="hero-copy-m__text">
+                    <span className="line-one">LIMITED-TIME OFFER</span>
+                    <h1 className="line-two">Boost your business with a loan at Prime minus 2%*</h1>
+                    <span className="line-three">Get a one-year term loan or revolving line of credit up to $100,000 with no origination fee</span>
                 </div>
             </div>
         </>

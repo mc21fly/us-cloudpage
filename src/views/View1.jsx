@@ -12,10 +12,7 @@ export default function View1({ handleNext, sending }) {
                         <h1>Reach even the most ambitious possibilities</h1>
                     </div>
                     <div className="right">
-                        <p className="small">
-                            Get a one-year term loan or revolving line of credit up to $100,000 with no origination fee to <br className="mbl-hide" />
-                            fuel your business ambitions.
-                        </p>
+                        <p className="small">With our expert advice and tailored solutions, we can help build your business.</p>
                     </div>
                 </section>
             </div>
@@ -23,7 +20,7 @@ export default function View1({ handleNext, sending }) {
                 <section className="form padding">
                     <div className="form__header">
                         <div className="left">
-                            <span className="small">Interested in learning more? Request a follow-up – we’re here to help.</span>
+                            <span className="small">Interested in learning more? Request a follow-up ─ we’re here to help.</span>
                         </div>
                         <div className="right" style={{ paddingTop: 10 }}>
                             <p className="small">Get started by answering a few questions so we can reach out to you within two business days.</p>
@@ -101,7 +98,7 @@ export default function View1({ handleNext, sending }) {
                         <div className="form__fields--row">
                             <FieldText id="Zip" label="Zip code" validator={Validator} regEx={/(^\d{5}$)|(^\d{5}-\d{4}$)/} />
                         </div>
-                        <div className="form__fields--row">
+                        <div className="form__fields--row" style={{ marginBottom: 35 }}>
                             <div className="field">
                                 <div className="field">
                                     <label className="small bold">I am currently a CIBC client</label>

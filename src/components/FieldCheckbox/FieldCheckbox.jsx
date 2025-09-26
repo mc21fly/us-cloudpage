@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { useStorage } from "../../hooks";
 
-export default function FieldCheckbox({ id, label, validator }) {
+export default function FieldCheckbox({ id, label, validator, setError }) {
     const input = useRef();
     const [store, getStored] = useStorage("answers");
 
@@ -18,6 +18,7 @@ export default function FieldCheckbox({ id, label, validator }) {
 
     function handleChange({ target }) {
         store(id, target.checked);
+        setError(false);
     }
 
     function validate() {

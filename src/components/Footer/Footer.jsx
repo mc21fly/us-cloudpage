@@ -3,36 +3,9 @@ export default function Footer() {
         <div className="container grey">
             <footer>
                 <p>
-                    *All loans subject to credit approval. Minimum credit score required. Offer is subject to change, and may be withdrawn, at any time without notice. This offer
-                    is valid for businesses with annual revenues less than $1,000,000 that are approved for a new Term Loan or Revolving Line of Credit by November 30, 2025. Lines
-                    of credit available up to $100,000 with a maximum loan term of one year when you also have an existing or open a new deposit account. Rates for revolving lines
-                    of credit are variable based on the WSJ prime rate and subject to change. Rate floor for this offer is 5%. Term loans available up to $100,000 with a maximum
-                    loan term of one year. EasyPath lines of credit available up to $30,000 with a maximum loan term of one year when you also have an existing or open a new
-                    deposit account. EasyPath term loans available up to $30,000 with a maximum loan term of one year. Entrepreneur lines of credit available up to $10,000 with a
-                    maximum loan term of one year when you also have an existing or open a new deposit account. Entrepreneur term loans available up to $10,000 with a maximum loan
-                    term of one year. Personal guarantee required for all business loans and lines of credit. Offer requires a new or existing deposit relationship with CIBC Bank
-                    USA. Geographic restrictions apply and are subject to change at any time without notice. Clients with existing CIBC small business loans are not eligible for
-                    this&nbsp;offer.
-                </p>
-                <p>Products and services are offered by CIBC Bank USA.</p>
-                <p>This website is not intended for use by residents of the European Union (EU).</p>
-                <p>
-                    California residents, learn about the{" "}
-                    <a href="https://us.cibc.com/en/legal/california-consumer-privacy-act.html" target="_blank">
-                        California Privacy Policy
-                    </a>
-                </p>
-                <p>
-                    <sup style={{ lineHeight: 0 }}>&reg;</sup>The CIBC Logo is a registered trademark of CIBC, used under license. CIBC Bank USA.
+                    <sup style={{ lineHeight: 0 }}>&reg;</sup>The CIBC Logo is a registered trademark of CIBC, used under license.
                 </p>
                 <p>&copy; {new Date().getFullYear()}. All rights reserved.</p>
-                <p>
-                    <img
-                        src="https://image.s12.sfmc-content.com/lib/fe36117371640479771576/m/1/fa8731e8-55fc-4b53-a722-5629b8b2c315.png"
-                        alt="Equal housing lender | Member FDIC"
-                        style={{ height: "auto", maxWidth: "327px", width: "327px" }}
-                    />
-                </p>
             </footer>
         </div>
     );

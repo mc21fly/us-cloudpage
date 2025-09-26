@@ -1,7 +1,7 @@
-import { FieldText, FieldSelect, FieldEmail, FieldRadio } from "../components";
+import { FieldCheckbox, FieldCheckboxText } from "../components";
 import { useValidation } from "../hooks";
 
-export default function View1({ handleNext, sending }) {
+export default function View1({ handleNext, sending, error, setError }) {
     const [validate, Validator] = useValidation();
 
     return (
@@ -9,10 +9,10 @@ export default function View1({ handleNext, sending }) {
             <div className="container">
                 <section className="heading padding" style={{ paddingBottom: 10 }}>
                     <div className="left">
-                        <h1>Reach even the most ambitious possibilities</h1>
+                        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
                     </div>
                     <div className="right">
-                        <p className="small">With our expert advice and tailored solutions, we can help build your business.</p>
+                        <p className="small">At, suscipit cupiditate. Molestiae debitis recusandae excepturi doloremque omnis ex rerum&nbsp;tempore.</p>
                     </div>
                 </section>
             </div>
@@ -20,92 +20,49 @@ export default function View1({ handleNext, sending }) {
                 <section className="form padding">
                     <div className="form__header">
                         <div className="left">
-                            <span className="small">Interested in learning more? Request a follow-up ─ we’re here to help.</span>
+                            <span className="small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi illo iusto fugit&nbsp;illum.</span>
                         </div>
                         <div className="right" style={{ paddingTop: 10 }}>
-                            <p className="small">Get started by answering a few questions so we can reach out to you within two business days.</p>
+                            <p className="small">Culpa amet laudantium quam debitis dolor tempore molestiae possimus enim sint magni quod&nbsp;qui?</p>
                         </div>
                     </div>
                     <div className="form__fields">
-                        <div className="form__fields--row">
-                            <FieldText id="FirstName" label="First name" validator={Validator} />
-                            <FieldText id="LastName" label="Last name" validator={Validator} />
+                        <div className="form__fields--row bold" style={{ marginBottom: 30, fontSize: 18 }}>
+                            What’s your main financial focus right now? Select all that apply — you can choose more than one&nbsp;option.
                         </div>
-                        <div className="form__fields--row">
-                            <FieldEmail id="EmailAddress" label="Email address:" validator={Validator} />
-                            <FieldText id="Phone" label="Phone number" validator={Validator} regEx={/^(\+1\s?)?(\(\d{3}\)|\d{3})[-.\s]?\d{3}[-.\s]?\d{4}$/g} />
-                        </div>
-                        <div className="form__fields--row">
-                            <FieldText id="Address" label="Address" validator={Validator} regEx={/^.*$/g} />
-                            <FieldSelect
-                                id="State"
-                                label="State"
-                                options={[
-                                    "AL",
-                                    "AK",
-                                    "AZ",
-                                    "AR",
-                                    "CA",
-                                    "CO",
-                                    "CT",
-                                    "DE",
-                                    "FL",
-                                    "GA",
-                                    "HI",
-                                    "ID",
-                                    "IL",
-                                    "IN",
-                                    "IA",
-                                    "KS",
-                                    "KY",
-                                    "LA",
-                                    "ME",
-                                    "MD",
-                                    "MA",
-                                    "MI",
-                                    "MN",
-                                    "MS",
-                                    "MO",
-                                    "MT",
-                                    "NE",
-                                    "NV",
-                                    "NH",
-                                    "NJ",
-                                    "NM",
-                                    "NY",
-                                    "NC",
-                                    "ND",
-                                    "OH",
-                                    "OK",
-                                    "OR",
-                                    "PA",
-                                    "RI",
-                                    "SC",
-                                    "SD",
-                                    "TN",
-                                    "TX",
-                                    "UT",
-                                    "VT",
-                                    "VA",
-                                    "WA",
-                                    "WV",
-                                    "WI",
-                                    "WY",
-                                ]}
-                                validator={Validator}
-                            />
-                        </div>
-                        <div className="form__fields--row">
-                            <FieldText id="Zip" label="Zip code" validator={Validator} regEx={/(^\d{5}$)|(^\d{5}-\d{4}$)/} />
-                        </div>
-                        <div className="form__fields--row" style={{ marginBottom: 35 }}>
-                            <div className="field">
-                                <div className="field">
-                                    <label className="small bold">I am currently a CIBC client</label>
-                                </div>
-                                <FieldRadio id="isClient" options={["Yes", "No"]} validator={Validator} />
-                                <input type="hidden" id="Source" name="Source" value="%%=v(@source)=%%" />
+                        {error ? (
+                            <div className="form__fields--row bold" style={{ marginBottom: 30, fontSize: 18, color: "red" }}>
+                                {error}
                             </div>
+                        ) : null}
+                    </div>
+                    <div className="form__fields" style={{ padding: "0px 0px" }}>
+                        <div className="form__fields--row">
+                            <FieldCheckbox id="a1" label="Paying down debt faster" validator={Validator} setError={setError} />
+                        </div>
+                        <div className="form__fields--row">
+                            <FieldCheckbox id="a2" label="Building an emergency fund" validator={Validator} setError={setError} />
+                        </div>
+                        <div className="form__fields--row">
+                            <FieldCheckbox id="a3" label="Building credit" validator={Validator} setError={setError} />
+                        </div>
+                        <div className="form__fields--row">
+                            <FieldCheckbox id="a4" label="Saving for a child’s education" validator={Validator} setError={setError} />
+                        </div>
+                        <div className="form__fields--row">
+                            <FieldCheckbox id="a5" label="Saving for retirement" validator={Validator} setError={setError} />
+                        </div>
+                        <div className="form__fields--row">
+                            <FieldCheckbox id="a6" label="Buying a home" validator={Validator} setError={setError} />
+                        </div>
+                        <div className="form__fields--row">
+                            <FieldCheckbox id="a7" label="Growing investments" validator={Validator} setError={setError} />
+                        </div>
+                        <div className="form__fields--row">
+                            <FieldCheckbox id="a8" label="Access to additional cash flow" validator={Validator} setError={setError} />
+                        </div>
+                        <div className="form__fields--row">
+                            <FieldCheckboxText id="a9" label="Other" validator={Validator} setError={setError} />
                         </div>
                     </div>
                     <div className="form__footer">

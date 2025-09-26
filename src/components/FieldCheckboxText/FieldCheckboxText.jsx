@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { useStorage } from "../../hooks";
 
-export default function FieldCheckboxText({ id, label, validator }) {
+export default function FieldCheckboxText({ id, label, validator, setError }) {
     const input = useRef();
     const checkbox = useRef();
     const [store, getStored] = useStorage("answers");
@@ -28,10 +28,9 @@ export default function FieldCheckboxText({ id, label, validator }) {
 
     function handleChange({ target }) {
         store(id, target.checked);
+        setError(false);
         input.current.disabled = !target.checked;
         input.current.style.border = "1px solid #414042";
-
-        if (!target.checked) store(`${id}sub`, "");
     }
 
     function handleInput({ target }) {
@@ -40,11 +39,13 @@ export default function FieldCheckboxText({ id, label, validator }) {
 
     function handleBlur({ target }) {
         target.style.border = "1px solid #414042";
+        setError(false);
     }
 
     function validate() {
         if (checkbox.current.checked && (input.current.value === "" || !input.current.value.match(/^[a-zA-Z\s\,\.\\\/\;\:\-]*$/g))) {
             input.current.style.border = "1px solid red";
+            setError("Please specify your financial focus (max 50 characters).");
             return false;
         }
 
@@ -58,7 +59,7 @@ export default function FieldCheckboxText({ id, label, validator }) {
                 <label htmlFor={id}>{label ? label : "Label placeholder"}</label>
             </div>
             <div className="field__checkbox--text">
-                <input ref={input} disabled type="text" onChange={handleInput} onBlur={handleBlur} id={`${id}sub`} />
+                <input ref={input} disabled type="text" onChange={handleInput} onBlur={handleBlur} id={`${id}sub`} maxLength={50} />
             </div>
         </>
     );
